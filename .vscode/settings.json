@@ -1,16 +1,10 @@
 {
     "cSpell.words": [
-        "actualizarcancion",
+        "Addcancion",
+        "addplaylist",
         "cancion",
-        "cancioneliminar",
         "canciones",
-        "crearcancion",
-        "eliminarcancion",
-        "estudiantes",
-        "nuevacancion",
-        "obtenercancion",
-        "obtenercanciones",
-        "rutascanciones",
-        "rutes"
+        "playlistcontroller",
+        "rutaplaylist"
     ]
 }

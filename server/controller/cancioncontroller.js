@@ -1,4 +1,4 @@
-import cancion from "./../modelos/cancion.js";
+import cancion from "../model/cancion.js";
 
 
 const crearcancion = async (req, res) => {

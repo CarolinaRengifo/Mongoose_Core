@@ -1,20 +1,19 @@
 import express from 'express';
-import dbConnect from './config/mongoose.config.js';
+import cors from 'cors';
 import dotenv from 'dotenv';
 import rutascanciones from './rutes/rutascanciones.js';
+import rutaplaylist from './rutes/rutaplaylist.js';
+import dbConnect from './config/mongoose.config.js';
 
 dotenv.config();
-
 const app = express();
-//Configuracion de Express
+
+app.use(cors());
 app.use(express.json());
-//Configuracion de rutas
+
 app.use("/canciones", rutascanciones);
+app.use("/playlist", rutaplaylist);
 
 const PORT = process.env.PORT;
-
 dbConnect();
-
-app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto: ${PORT}`);
-});
+app.listen(PORT, () => console.log(`🚀 Servidor corriendo en puerto ${PORT}`));

@@ -1,4 +1,5 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
+
 
 const cancionSchema = mongoose.Schema({
     title: {
@@ -27,10 +28,9 @@ const cancionSchema = mongoose.Schema({
         required: [true, "El género es obligatorio."],
     },
     },
-    {
-    timestamps: true,
-    }
+    {timestamps: true}
 );
+export { cancionSchema };
 
 const cancion = mongoose.model("cancion", cancionSchema);
 

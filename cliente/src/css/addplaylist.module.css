@@ -1,0 +1,56 @@
+.container {
+  background: #fff;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #F783AC;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #F783AC;
+  outline: none;
+  box-shadow: 0 0 5px rgba(247,131,172,0.5);
+}
+
+h2 {
+  color: #4C6EF5;
+  margin-bottom: 0.5rem;
+}
+
+div > label {
+  margin-left: 0.5rem;
+  color: #333;
+}
+
+button {
+  background: linear-gradient(90deg, #4C6EF5, #F783AC);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
